@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+kubeconfig
+
+# Generated evidence
+artifacts/
+reports/
+*.log
+
+# Editors
+.vscode/
+.idea/
