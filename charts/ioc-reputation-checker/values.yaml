@@ -1,0 +1,22 @@
+api:
+  replicaCount: 1
+  image:
+    repository: ioc-reputation-checker
+    tag: local
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 8000
+
+postgresql:
+  image:
+    repository: postgres
+    tag: 16-alpine
+    pullPolicy: IfNotPresent
+  database: ioc_reputation
+  username: ioc_user
+  password: ioc_password
+  service:
+    port: 5432
+  persistence:
+    size: 1Gi

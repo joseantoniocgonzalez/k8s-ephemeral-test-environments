@@ -1,0 +1,6 @@
+apiVersion: v2
+name: ioc-reputation-checker
+description: Helm chart for ephemeral IOC Reputation Checker test environments
+type: application
+version: 0.1.0
+appVersion: "local"
